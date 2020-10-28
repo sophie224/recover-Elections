@@ -1,6 +1,6 @@
 html{
-    font-size: 0.9vw !important;
     scroll-behavior: smooth;
+    font-size: 0.9vw !important;
 }
 body{
     margin: 0;
@@ -8,48 +8,48 @@ body{
     font-family: 'DejaVuSans' !important;
 }
 @font-face {
-    font-family: 'DejaVuSans';
-    src: url('./assets/fonts/DejaVuSans.woff2') format('woff2'),
-        url('DejaVuSans.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-  }
+  font-family: 'DejaVuSans';
+  src: url('./assets/fonts/DejaVuSans.woff2') format('woff2'),
+      url('DejaVuSans.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
   
-  @font-face {
-    font-family: 'DejaVuSans Bold';
-    src: url('./assets/fonts/DejaVuSans-Bold.woff2') format('woff2'),
-        url('DejaVuSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: 'DejaVuSans Bold';
+  src: url('./assets/fonts/DejaVuSans-Bold.woff2') format('woff2'),
+      url('DejaVuSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
   
-  @font-face {
-    font-family: 'DejaVuSans';
-    src: url('./assets/fonts/DejaVuSans-Bold.woff2') format('woff2'),
-        url('DejaVuSans-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-  }
+@font-face {
+  font-family: 'DejaVuSans';
+  src: url('./assets/fonts/DejaVuSans-Bold.woff2') format('woff2'),
+      url('DejaVuSans-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 img{
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 p{
-    margin: 0 0 30px !important ;
+  margin: 0 0 30px !important ;
 }
 a{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 ol li,ul li{
-    font-weight: 1rem !Important;
-    font-weight: bold !important;
+  font-size: 1.3rem ;
+  font-weight: bold !important;
 }
 i {
-    color: rgba(40,40,40,1);
+  color: rgba(40,40,40,1);
 }
 
 .image-common-container{
@@ -66,8 +66,25 @@ i {
 .infoEachElection{
     padding-top: 1%;
 }
-
-
+.intro-common-container{
+  width: 70%;
+  margin: 3% auto;
+  text-align: center;
+}
+.intro-common-container p{
+  font-size: 1.5rem ;
+}
+.intro-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logo{
+  cursor:pointer;
+  padding-top: 1%;
+  width:6%;
+}
 /*button style start*/
 
 .frame {
@@ -90,10 +107,6 @@ i {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
-    /* display: inline-block;
-        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-        7px 7px 20px 0px rgba(0,0,0,.1),
-        4px 4px 5px 0px rgba(0,0,0,.1); */
     outline: none;
 }
 
@@ -141,22 +154,14 @@ i {
 /*button style end*/  
 
 
-/*1990 election section start*/
-/* .fullscreen-cover{
-    background-image: url(./assets/img/1990.jpg);
-    height: 100vh;
-    position: relative;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100%;
-} */
+
 .text_info{
     max-width: 740px;
     margin: 10px auto;
 }
 .main_title{
     text-align: center;
-    font-size: 1.5rem !important;
+    font-size: 2rem ;
     font-weight: 600;
     opacity: .9;
     padding: 2% 0;
@@ -168,7 +173,7 @@ i {
     color: red;
 }
 .Subtitle ul li,.Subtitle p{
-    font-size: 1.2rem !important;
+    font-size: 2rem ;
     font-weight: 600;
     opacity: .9;
 }
@@ -185,10 +190,8 @@ i {
 .active{
     display: block;
 }
-/* .active{
-    display: block;
-} */
-/*1990 election section end*/
+
+
 .main-fullscreen-cover{
     width: 70%;
     
@@ -197,42 +200,18 @@ i {
     margin: 3% auto;
 }
 
-
-
-/*reponsive start*/
-@media only screen and (max-width: 900px) {
-    .cover {
-        width: 45%;
-    }
+footer{
+  width: 100%;
+  height: 70px;
+  background: #ecececcf;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }
-@media only screen and (max-width: 740px) {
-   .main-fullscreen-cover{
-       width:90%
-   }
-   p,.main-paragraphs p{
-       font-size: 3rem !important;
-   }
-   .Subtitle ul li,  li{
-       font-size: 3.2rem !important;
-   }
-   .main_title p{
-       margin:0 0 10px !important;
-   }
-   .Subtitle p,.main_title p{
-       font-size: 3.5rem !important;
-   }
-   .fullscreen-cover{
-       width: 80%;
-   }
-   .main-paragraphs , .Subtitle,.two_elections-title{
-    width: 80%;
-    margin: 0 auto;
-   }
-}
-@media only screen and (max-width: 480px) {
-    .cover {
-        width: 95%;
-    }
+footer div p{
+  font-size: 1.5rem;
+  margin:0 !important;
 }
 
 
@@ -370,4 +349,48 @@ i {
     background-color:#e74c3c;
     opacity:1;filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
+}
+
+
+
+/*reponsive start*/
+@media only screen and (max-width: 900px) {
+  .cover {
+      width: 45%;
+  }
+}
+@media only screen and (max-width: 740px) {
+ .main-fullscreen-cover{
+     width:90%
+ }
+ p,.main-paragraphs p{
+     font-size: 3rem !important;
+ }
+ .Subtitle ul li,  li{
+     font-size: 3.2rem !important;
+ }
+ .main_title p{
+     margin:0 0 10px !important;
+ }
+ .Subtitle p,.main_title p{
+     font-size: 3.5rem !important;
+ }
+ .fullscreen-cover{
+     width: 80%;
+ }
+ .main-paragraphs , .Subtitle,.two_elections-title{
+  width: 80%;
+  margin: 0 auto;
+ }
+ .logo{
+   width:11%;
+ }
+ footer div p{
+  font-size: 4rem !important;
+}
+}
+@media only screen and (max-width: 480px) {
+  .cover {
+      width: 95%;
+  }
 }
