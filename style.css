@@ -414,6 +414,9 @@ iframe{
  footer div p{
   font-size: 4rem !important;
 }
+.bigFont{
+  font-size: 2.5rem!important;
+}
 
 }
 @media only screen and (max-width: 480px) {
