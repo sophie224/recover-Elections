@@ -199,7 +199,29 @@ i {
 .fullscreen-cover{
     margin: 3% auto;
 }
-
+.authors-container{
+  margin: 5% 0;
+}
+.author_each-container,.authors-container{
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+}
+.author-title{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.author_each-container span:not(:first-child),.additional-info{
+  font-size: 1.2rem;
+}
+.additional-info:before,.authors:before{
+  border-top: 2px solid #e77454;
+  content: "";
+  display: block;
+  margin: 1rem auto;
+  width: 6rem;
+}
 footer{
   width: 100%;
   height: 70px;
@@ -416,6 +438,13 @@ iframe{
 }
 .bigFont{
   font-size: 2.5rem!important;
+}
+.author-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.author_each-container span:not(:first-child),.additional-info{
+  font-size: 2.2rem;
 }
 
 }
